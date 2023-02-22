@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    font-family: 'Roboto', sans-serif;
+    ;
+
+}
+
+body {
+    margin: 0;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0f172a;
+    height: 10vh;
+    width: 100%;
+    background-color: #93c5fd;
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 1px 2px #881337;
+
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-color: #f5f3ff;
+
+}
+
+.score {
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+    height: 50px;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    width: 500px;
+
+}
+
+.player2 {
+    text-align: end;
+    height: 35px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+.player1 {
+    color: #727274;
+    font-size: 23px;
+    background-color: white;
+    height: 30px;
+    padding: 2px 5px 2px 5px;
+    border-radius: 10px;
+    border: 1px solid #0f172a;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.controls button {
+    font-size: 15px;
+    font-weight: bold;
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: #c6e0ff;
+    border: none;
+    user-select: none;
+}
+
+.controls button:hover {
+    background-color: #93c5fd;
+}
+
+.play-game {}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 500px;
+    height: 500px;
+}
+
+.cell {
+    color: #1c1917;
+    border: white solid 5px;
+    background-color: #bbf7d0;
+    display: flex;
+    flex: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 125px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border-radius: 15px;
+    transition: cubic-bezier(.57, .07, .39, 1.26) 0.25s;
+}
+
+.cell:hover {
+    background-color: #83cf9d;
+    border-radius: 30px;
+}
+
+
+.cell-x::after {
+    content: 'X';
+}
+
+.cell-o::after {
+    content: 'O';
+}
